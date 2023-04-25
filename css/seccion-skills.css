@@ -1,0 +1,27 @@
+
+.slide__imagen{    
+    display: block;    
+    width: 200px; 
+    padding-bottom: 2rem; 
+    margin: auto;  
+}
+
+
+
+@media screen and (min-width: 720px){ /* TABLETS*/ 
+   
+    .skills{
+        display: flex;
+        margin: 0 4rem;
+    }
+    .slide__imagen{ 
+        display: flex;
+        width: 150px;         
+    }
+    
+}
+
+@media screen and (min-width:1000px){ /*PC COMPU*/
+
+    
+}

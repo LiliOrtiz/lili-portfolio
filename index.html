@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+
+     <!--ICONOS-->
+    <script src="https://kit.fontawesome.com/43df493d6c.js" crossorigin="anonymous"></script>    
+    <!--LETRAS-->
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto:100,300,400,500,700,900" rel="stylesheet" />     
+
+     <!--ESTILOS--> 
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/header-cabezera.css">
+    <link rel="stylesheet" href="css/header-autor.css">
+    <link rel="stylesheet" href="css/seccion-sobremi.css">
+    <link rel="stylesheet" href="css/seccion-sobremi-hobbies.css">
+    <link rel="stylesheet" href="css/seccion-skills.css">
+    <link rel="stylesheet" href="css/seccion-formacion.css">
+    <link rel="stylesheet" href="css/seccion-contacto.css">
+
+</head>
+<body>
+
+    <header class="headerPrincipal"> 
+
+        <div class="cabezera">
+            <div class="cabezera__logo">
+                <img src="img/logo.png" alt="logo de mariposa">
+            </div>
+            <div class="cabezera__menu">
+                <i class="fas fa-bars" id="btn_menu"></i> <!-- MENU REVERSIBLE-->
+                <div id="menu__back"></div>  <!-- PARA Q CUANDO SE VEA EL MENU EL FONDO ESTE OSCURO-->
+
+                <nav class="cabezera__nav" id="nav">
+                    <img class="logo_menu" src="img/logo.png" alt="logo de mariposa">
+
+                    <ul class="cabezera__nav__ul">                        
+                        <li class="cabezera__nav__li activo"><a href="#" class="cabezera__nav__a">Sobre mi</a></li>
+                        <li class="cabezera__nav__li"><a href="#" class="cabezera__nav__a">Habilidades</a></li>                       
+                        <li class="cabezera__nav__li"><a href="#" class="cabezera__nav__a">Formación</a></li>
+                        <li class="cabezera__nav__li"><a href="#" class="cabezera__nav__a">Proyectos</a></li>
+                        <li class="cabezera__nav__li"><a href="#" class="cabezera__nav__a">Contacto</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+
+        <div class="banner__autor">
+            
+            <img src="img/lili.png" alt="foto de perfil" class="banner__autor__img" >
+            <div class="banner__autor__texto">
+                <h1 class="nombre">LILIANA ORTIZ</h1>
+                <p class="titulo">Front-end Developer</p>
+            </div>
+            
+        </div>
+
+    </header>
+
+    <main>
+
+        <section class="seccion__item" id="sobre__mi">
+            
+            <!-- sobre mi/ skills / hobbies / formacion-->
+            <h1 class="seccion__titulo">Sobre mi</h1>
+
+            <div class="sobre__mi">                
+                <img class="sobre__mi__foto" src="img/lili.png" alt="imagen foto">              
+               
+                <div class="sobre__mi__informacion__tarjeta">
+                   <p>Mi nombre es Liliana Ortiz y soy de la ciudad de Buenos Aires Argentina. Desde joven tengo interés en la informática, por eso empecé a estudiar para ser Profesora de Informática. Durante el transcurso de mi carrera me atrapó todo lo relacionado al arte y diseño, a lo que incluyo programación y diseño de páginas web</p> 
+                   <br>                  
+                   <p>En la actualidad me encuentro dentro del programa "ONE Program Oracle + Alura" en la parte Front-end Developer, para poder seguir adquiriendo más conocimiento </p>               
+                </div>
+            </div>            
+
+            <div class="sobre__mi__hobbies">
+
+                <h2> Mis hobbies</h2> 
+                 <!-- ICONOS DE HOBBIES MIOS-->
+                <div class="sobre__mi__hobbies__icons">
+
+                    <div class="hobbie">
+                        <i class="hobbie_icon fa-solid fa-palette"></i>
+                        <p class="hobbie_p">Dibujar</p>
+                    </div>
+                    <div class="hobbie">
+                        <i class="hobbie_icon fa-solid fa-gamepad" ></i>
+                        <p class="hobbie_p">Videojuegos</p>
+                    </div>
+                    <div class="hobbie">
+                        <i class="hobbie_icon fa-solid fa-headphones"></i>
+                        <p class="hobbie_p">Escuchar música</p>
+                    </div>                    
+                    <div class="hobbie">
+                        <i class="hobbie_icon fa-solid fa-comment-dots" ></i>
+                        <p class="hobbie_p">Comics</p>
+                    </div>                   
+                  
+                </div> 
+            </div>
+
+        </section>
+
+        <section class="seccion__item" id="skills">          
+
+            <h1 class="seccion__titulo">Habilidades</h1> 
+
+            <div class="skills">                
+                    <!--IMAGENES-->
+                <img class="slide__imagen" src="img/html5Logo.png" alt="logo de html 5">
+                <img class="slide__imagen" src="img/css3Logo.png" alt="logo de Css 3">
+                <img class="slide__imagen" src="img/javascriptLogo.png" alt="logo de Javascript">
+                <img class="slide__imagen" src="img/git.png" alt="logo de Github">
+                
+            </div>
+
+        </section>
+       
+        <section class="seccion__item" id="formacion">
+
+            <h1 class="seccion__titulo">Formación académica</h1>
+
+            <div class="formacion">
+                <div class="seccion__formacion" id="alura">
+                    <img class="alura" src="img/alura.jpeg" alt="Logo de Alura">
+                    <h2 class="titulo">Junior Front-end Developer</h2>
+                    <p class="duracion">2022-2023</p>
+                </div>
+                <div class="seccion__formacion" id="jvg">
+                    <img class="jvg" src="img/jvg.jpeg" alt="Logo de JVG">
+                    <h2 class="titulo">Profesorado en Informática</h2>
+                    <p class="seccion-duracion">2015-En curso</p>
+                </div>            
+                <div class="seccion__formacion" id="bermejo">
+                    <img class="bermejo" src="img/bermejo.png" alt="Logo de Bermejo">
+                    <h2 class="titulo">Perito Mercantil con especializacion contable e impositiva</h2>
+                    <p class="duracion">2006-2011</p>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="seccion__item" id="proyectos">
+
+            <h1 class="seccion__titulo">Proyectos</h1>
+
+            <div class="conteiner__proyectos">
+
+                <div class="proyectos" id="encriptador">
+                    <h2>Barberia</h2>
+                    <img src="" alt="">                    
+                </div>
+
+                <div class="proyectos" id="encriptador">
+                    <h2>FlexBox</h2>
+                    <img src="" alt="">                    
+                </div>
+
+                <div class="proyectos" id="encriptador">
+                    <h2>Lista de Tareas</h2>
+                    <img src="" alt="">                    
+                </div>
+
+                <div class="proyectos" id="encriptador">
+                    <h2>Encriptador</h2>
+                    <img src="" alt="">                    
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="seccion__contacto" id="contacto">
+
+            <h1 class="seccion__titulo">Contacto</h1>
+
+            <div class="contacto__lista">
+                <a href="https://www.linkedin.com/in/cristina-liliana-ortiz/" target="_blank">
+                    <img src="img/linkedin.png" alt="LinkedIn" class="imagen__contacto"></a>
+                <a href="https://www.github.com/LiliOrtiz/" target="_blank">
+                    <img src="img/gitRed.png" alt="GitHub" class="imagen__contacto"></a>
+            </div>
+
+        </section>
+    </main>
+
+    <!--SCRIPT EXTERNOS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!--SCRIPT MIO-->
+    <script src="js/header-menu.js"></script>
+    
+</body>
+</html>

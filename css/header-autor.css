@@ -1,0 +1,73 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+
+.banner__autor{
+    margin-top: -50px;
+    display: flex;    
+    flex-direction:column;
+    justify-content: center;    
+    align-items: center; 
+    position: relative;
+    height: 100%;
+}
+
+.banner__autor__img{
+    width: 50%;  
+    border-radius: 100%;   
+    background: rgba(0, 0, 0, 0.1);
+    box-shadow: 5px 10px 30px 5px #000000;  
+}
+
+.banner__autor__texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    font-family: Roboto, sans-serif;
+}
+
+.banner__autor__texto h1{
+    font-size: 35px;
+    font-family: 'Permanent Marker', cursive;
+    color: rgb(26, 22, 41);
+}
+
+.banner__autor__texto p{
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+/*DISEÑO Responsive*/
+
+@media screen and (min-width: 720px){    
+
+    .banner__autor__img{      
+        width: 35%;        
+    }
+
+    .banner__autor__texto h1{
+        font-size: 40px;
+        font-family: 'Permanent Marker', cursive;
+        color: rgb(26, 22, 41);
+    }
+}
+
+@media screen and (min-width:1000px){
+
+    .banner__autor{          
+        flex-direction:row; 
+              
+    }
+
+    .banner__autor__img{
+        margin-left: -10%;
+        width: 30%;        
+    }
+
+    .banner__autor__texto h1{
+        font-size: 40px;
+    }
+}

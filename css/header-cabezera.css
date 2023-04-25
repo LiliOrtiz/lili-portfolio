@@ -1,0 +1,149 @@
+.headerPrincipal{
+    background: linear-gradient(#6e2946, #6e2946, #883457,#b9567f);
+    height: 100vh;  
+}
+
+.cabezera{    
+    
+    display: flex;
+    justify-content:space-between;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    
+}
+
+.cabezera__logo img{
+    width: 60px;
+    margin: 1rem;
+}
+
+#btn_menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+#btn_menu:hover{
+    background: rgba(255, 255, 255, 0.3);
+}
+
+#menu__back{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    display: none;    
+}
+
+.cabezera__nav{
+    background-color: #6e2946;   
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    padding: 2rem; 
+    width: 35%;
+    z-index: 1;
+    right: -300px;
+    transition: all 300ms;    
+}
+.logo_menu{
+  width: 60px;
+  margin-left: 1rem;
+}
+
+.cabezera__nav__ul{
+    margin-top: 3.5rem;
+    margin-left: 1rem;
+}
+
+.cabezera__nav__li {
+    font-family: Roboto, sans-serif;
+    margin-right: 1.25rem;
+    list-style: none;
+    margin-top: 30px;
+    margin-left: 0;    
+}
+
+.cabezera__nav__a{
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.cabezera__nav__ul li a{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    
+}
+
+
+/*DISEÑO Responsive*/
+
+@media screen and (min-width: 720px){ /* TABLETS*/ 
+  
+    .cabezera{
+        align-items: center;
+        background-color: transparent;
+        /*position: fixed;
+        z-index: 3;*/
+    }
+
+    .cabezera__logo img{
+        width: 70px; 
+        margin: auto;       
+    }    
+
+    #btn_menu{
+        display: none;
+    }
+
+    #menu__back{
+        display: none;
+    }
+   
+    .cabezera__nav{
+        position:static;        
+        height: auto;
+        width: auto;
+    }    
+ 
+    .cabezera__nav__ul{
+        display: flex;
+        margin-top: 0;
+        
+    }
+    .logo_menu{
+        display: none;
+      }
+
+    .cabezera__nav__li {
+        margin-top: 0;         
+        text-decoration: none;
+    }
+
+    
+
+}
+
+@media screen and (min-width:1000px){ /*PC COMPU*/
+    .cabezera__logo img{
+        width: 100px;
+    }
+    .cabezera__nav__a{
+        margin-right: 1rem;
+    }
+
+
+}
